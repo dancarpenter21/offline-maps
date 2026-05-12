@@ -24,6 +24,7 @@ npm run build
 
 ## Offline behavior
 
-The Leaflet pane uses a local canvas grid layer instead of remote map tiles. The
-Cesium pane uses generated coordinate imagery with ellipsoid terrain, no Cesium
-Ion token, no online terrain, and all network-backed widgets disabled.
+Both panes use the bundled `public/maps/blue-marble-world.jpg` image instead of
+remote map tiles. Leaflet displays it as a full-world image overlay, and Cesium
+drapes the same image over an ellipsoid globe with no Cesium Ion token, no online
+terrain, and all network-backed widgets disabled.
