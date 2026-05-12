@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offline Maps</title>
+  </head>
+  <body>
+    <div id="app">
+      <main class="map-shell" aria-label="Offline map comparison">
+        <section class="map-panel" aria-labelledby="leaflet-title">
+          <header class="panel-header">
+            <h1 id="leaflet-title">Leaflet</h1>
+            <span>Generated local tiles</span>
+          </header>
+          <div id="leaflet-map" class="map-surface"></div>
+        </section>
+        <section class="map-panel" aria-labelledby="cesium-title">
+          <header class="panel-header">
+            <h1 id="cesium-title">Cesium</h1>
+            <span>Offline globe</span>
+          </header>
+          <div id="cesium-container" class="map-surface"></div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
